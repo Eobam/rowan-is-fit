@@ -16,27 +16,28 @@
         <img src="./0584cfaa1cdbdbec.gif" width="400" height="300">
         <div class="container">
             
-                <div class="running_left_button" id="runningleftID">
-                    <button>read about rowan</button>
-                </div>
+            <div class="running_left_button" id="runningleftID">
+                <button onclick="window.location.href='./readrowan.html'">read about rowan</button>
+            </div>
 
         </div>
+
         <script>
             let ball = document.getElementById("runningleftID");
-            let myVar = null;
+            let null_shit = null;
             let margin = 0;
             let w = 1300;
             
             ball.onmouseenter = function() {
-                if (!myVar) {
-                    myVar = setInterval(spostaDiv, 90);
+                if (!null_shit) {
+                    null_shit = setInterval(spostaDiv, 90);
                 }
             };
             
             ball.onmouseleave = function() {
-                if (myVar) {
-                    clearInterval(myVar);
-                    myVar = null;
+                if (null_shit) {
+                    clearInterval(null_shit);
+                    null_shit = null;
                 }
             };
             
@@ -44,13 +45,15 @@
                 if (margin >= w) {
                     margin = 0;
                 } else {
-                    margin += 10;
+                    margin += 50;
                 }
                 ball.style.marginLeft = margin + "px";
-            } margin += 10;
+            } margin += 50;
             
         </script>
 
-    <button style="height: 30px; width: 30px;"></button>
+    <div style="height: 30px; width: 30px;">
+        <button href="https://github.com/Eobam/rowan-is-fit"> <img style="height: 30px; width: 30px;" src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"> </button>
+    </div>
     </body>
     </html>
